@@ -58,3 +58,11 @@ a:hover {
     font-size: 1.2em;
   }
 }
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.8;
+}
