@@ -60,9 +60,12 @@ a:hover {
 }
 footer {
     text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    font-size: 14px;
-    color: #ffffff;
-    opacity: 0.8;
+    margin-top: 60px;
+    padding: 25px;
+    font-size: 15px;
+    color: #d8bfd8; /* soft lavender-pink tone */
+    font-style: italic;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    font-family: 'Georgia', 'Cursive', serif;
 }
