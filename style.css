@@ -1,73 +1,89 @@
-body {
-  background-color: lavenderblush;
-  color: hotpink;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: "Georgia", serif;
+/* ====== GLOBAL STYLES ====== */
+
+/* Reset */
+* {
   margin: 0;
-  padding: 40px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Headings */
-h1 {
-  font-size: 2.8em;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px 3px rgba(255, 105, 180, 0.3);
+/* Body Background + Base Typography */
+body {
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(135deg, #f4efe8, #e8dfd5, #d8cfc4);
+  color: #2f2a26;
+  min-height: 100vh;
 }
 
-h2 {
-  font-size: 2em;
-  margin-top: 30px;
+ul {
+  list-style-type: none;
 }
 
-/* Poem text */
-p {
-  font-size: 1.4em;
-  line-height: 1.7em;
-  width: 80%;
-  max-width: 700px;
-  margin: 15px auto;
-}
-
-/* Links */
 a {
-  color: #cc0099;
+  color: #6d4c41;              /* warm brown tone */
   text-decoration: none;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s ease;
 }
 
-a:hover {
-  color: #66004d;
-  text-decoration: underline;
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 1px;
+  background-color: #6d4c41;
+  transition: 0.3s ease;
 }
 
-/* Responsive for mobile */
-@media (max-width: 600px) {
-  body {
-    padding: 25px;
-  }
-  h1 {
-    font-size: 2.2em;
-  }
-  p {
-    font-size: 1.2em;
-  }
+a:hover::after {
+  width: 100%;
 }
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+/* Poem Section */
+.poem-section {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 60px 30px 120px;
+  text-align: center;
+}
+
+.poem-title {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.poem-text {
+  font-size: 20px;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    margin-top: 60px;
-    padding: 25px;
-    font-size: 15px;
-    color: #d8bfd8; /* soft lavender-pink tone */
-    font-style: italic;
-    letter-spacing: 1px;
-    opacity: 0.9;
-    font-family: 'Georgia', 'Cursive', serif;
-    white-space: nowrap; /* keeps footer in one line */
-    letter-spacing: 1px;
+  text-align: center;
+  padding: 30px;
+  font-size: 16px;
+  opacity: 0.6;
 }
