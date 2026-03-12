@@ -1,26 +1,66 @@
-/* ====== GLOBAL STYLES ====== */
-
-/* Reset */
+/* ---------------- RESET ---------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Background + Base Typography */
+/* ---------------- BODY ---------------- */
 body {
   font-family: 'Playfair Display', serif;
   background: linear-gradient(135deg, #f4efe8, #e8dfd5, #d8cfc4);
   color: #2f2a26;
   min-height: 100vh;
+  text-align: center;
 }
 
+/* ---------------- HERO ---------------- */
+.hero {
+  padding: 120px 20px 60px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  opacity: 0.75;
+}
+
+/* ---------------- POEM SECTION ---------------- */
+.poem-section {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 60px 20px 100px;
+}
+
+.poem-title {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.poem-text {
+  font-size: 20px;
+  line-height: 1.9;
+}
+
+/* ---------------- PORTFOLIO LIST ---------------- */
 ul {
-  list-style-type: none;
+  list-style: none;   /* no bullets */
 }
 
+li {
+  margin: 15px 0;
+}
+
+/* ---------------- LINKS ---------------- */
 a {
-  color: #6d4c41;              /* warm brown tone */
+  color: #6d4c41;
   text-decoration: none;
   font-weight: 600;
   position: relative;
@@ -41,49 +81,11 @@ a::after {
 a:hover::after {
   width: 100%;
 }
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 120px 20px 80px;
-}
 
-.hero-title {
-  font-size: 56px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 18px;
-}
-
-.hero-subtitle {
-  font-size: 22px;
-  font-weight: 400;
-  opacity: 0.75;
-}
-
-/* Poem Section */
-.poem-section {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 60px 30px 120px;
-  text-align: center;
-}
-
-.poem-title {
-  font-size: 38px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-.poem-text {
-  font-size: 20px;
-  line-height: 1.9;
-  font-weight: 400;
-}
-
-/* Footer */
+/* ---------------- FOOTER ---------------- */
 footer {
-  text-align: center;
   padding: 30px;
   font-size: 16px;
   opacity: 0.6;
+  border-top: 1px solid rgba(0,0,0,0.05);
 }
